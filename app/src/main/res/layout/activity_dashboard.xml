@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/purple_700"
+        android:layout_height="match_parent"
+        tools:context=".dashboard">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Library Dashboard"
+                android:textSize="24sp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:layout_margin="20dp"
+                ></TextView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2"
+                android:layout_margin="5dp"
+                android:alignmentMode="alignMargins"
+                android:layout_gravity="center_horizontal"
+                android:columnOrderPreserved="false">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c1"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    android:layout_margin="18dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+
+                        <ImageButton
+                            android:layout_width="140dp"
+                            android:layout_height="110dp"
+                            android:id="@+id/c"
+                            android:contentDescription="@string/androidx_startup"
+                            android:src="@drawable/java"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Java Programming"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-condensed"></TextView>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fic"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    android:layout_margin="18dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:contentDescription="@string/androidx_startup"
+                            android:layout_height="100dp"
+                            android:src="@drawable/cplus"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" C++ Programming"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-condensed"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bio"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    android:layout_margin="18dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:contentDescription="@string/androidx_startup"
+                            android:src="@drawable/cyber"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text=" Cyber Security and Ethical Hacking"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stov"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    android:layout_margin="18dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/androidx_startup"
+                            android:src="@drawable/dbmss" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DBMS"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-condensed"></TextView>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                   android:id="@+id/mann"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    app:cardElevation="5dp"
+
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    android:layout_margin="18dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="159dp"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/androidx_startup"
+                            android:src="@drawable/c" />
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="110dp"
+                            android:text="C Programming"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-condensed"></TextView>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:id="@+id/nov"
+                    android:layout_height="170dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    android:layout_margin="18dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:contentDescription="@string/androidx_startup"
+                            android:layout_height="100dp"
+                            android:src="@drawable/machine"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Machine Learning"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-condensed"></TextView>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

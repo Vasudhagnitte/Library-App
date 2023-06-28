@@ -1,0 +1,15 @@
+<resources>
+
+
+    <style name="app_name" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+
+
+    </style>
+
+    <string name="app_name">MyHomePage</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>
